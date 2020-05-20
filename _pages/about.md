@@ -15,7 +15,7 @@ Building the [Noon academy](https://play.google.com/store/apps/details?id=com.no
 
 
 # **Outside of work**
-I have a very beautiful wife with whom i spend most of my time
+I have a very beautiful wife with whom i spend **most** of my time
 
 I love travelling and lifting weights.
 
