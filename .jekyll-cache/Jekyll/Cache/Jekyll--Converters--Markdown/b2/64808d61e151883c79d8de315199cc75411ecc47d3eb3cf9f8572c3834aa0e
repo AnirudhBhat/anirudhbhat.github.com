@@ -1,0 +1,2 @@
+I"g<p>Most of us might have faced the problem of losing the scroll position of the <code class="highlighter-rouge">RecyclerView</code> when your Activity/Fragment is recreated. This usually happens because the Adapter data is loaded asynchronously and data hasn’t loaded by the time RecyclerView needs to layout so it fails to restore the scroll position.</p>
+:ET
