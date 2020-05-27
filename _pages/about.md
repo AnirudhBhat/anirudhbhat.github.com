@@ -7,7 +7,7 @@ permalink: /about/
 # **About me**
 
 # **Android developer**
-I am an Android developer with passion for writing clean and maintanable code and big believer of writing good unit tests.
+I am an Android developer with passion for writing clean and maintainable code and a big believer in writing good unit tests.
 
 
 # **Work**
