@@ -1,0 +1,103 @@
+I"=$<p>Most of us might have faced the problem of losing the scroll position of the <code class="highlighter-rouge">RecyclerView</code> when your <code class="highlighter-rouge">Activity/Fragment</code> is recreated. This usually happens because the <code class="highlighter-rouge">Adapter</code> data is loaded asynchronously and data hasn’t loaded by the time <code class="highlighter-rouge">RecyclerView</code> needs to layout so it fails to restore the scroll position.</p>
+
+<h2 id="restoring-the-scroll-position-using-onrestoreinstancestate">Restoring the scroll position using onRestoreInstanceState</h2>
+<p><code class="highlighter-rouge">RecyclerView</code> already has a solution to this problem. The <code class="highlighter-rouge">LayoutManager</code> supports <code class="highlighter-rouge">onRestoreInstanceState</code> method which will help us save scroll positions.</p>
+
+<p>Let’s see small code snippet on how to use this</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="kd">var</span> <span class="py">recyclerScrollPosition</span><span class="p">:</span> <span class="nc">Int</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+<span class="k">private</span> <span class="kd">var</span> <span class="py">recyclerView</span><span class="p">:</span> <span class="nc">RecyclerView</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+
+<span class="k">override</span> <span class="k">public</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+    <span class="n">recyclerScrollPosition</span><span class="p">=</span><span class="n">savedInstanceState</span><span class="p">.</span><span class="nf">getParcelable</span><span class="p">(</span><span class="s">"scrollPosition"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="k">fun</span> <span class="nf">onSaveInstanceState</span><span class="p">(</span><span class="n">outState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onSaveInstanceState</span><span class="p">(</span><span class="n">outState</span><span class="p">)</span>
+    <span class="n">outState</span><span class="p">.</span><span class="nf">putParcelable</span><span class="p">(</span><span class="s">"scrollPosition"</span><span class="p">,</span><span class="n">recyclerView</span><span class="p">.</span><span class="n">layoutManager</span><span class="p">.</span><span class="nf">onSaveInstanceState</span><span class="p">())</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>Once your async operation is done and reattached to <code class="highlighter-rouge">RecyclerView</code> then call this method</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">recyclerView</span><span class="p">.</span><span class="n">layoutManager</span><span class="p">.</span><span class="nf">onRestoreInstanceState</span><span class="p">(</span><span class="n">recyclerScrollPosition</span><span class="p">)</span>
+</code></pre></div></div>
+<p><br />
+<br /></p>
+
+<h2 id="why-is-this-solution-not-recommended-anymore">Why is this solution not recommended anymore?</h2>
+<p>Even the above solution restores the scroll position of <code class="highlighter-rouge">RecyclerView</code> whenever <code class="highlighter-rouge">Activity/Fragment</code> gets recreated but it requires a bit of code and also we must make sure to call <code class="highlighter-rouge">onRestoreInstanceState</code> at the appropriate position and also should make sure that parcelable state that we pass to the <code class="highlighter-rouge">onRestoreInstanceState</code>method is not null.</p>
+
+<h2 id="restoring-scroll-position-the-official-way">Restoring scroll position the official way</h2>
+<p>Starting from <code class="highlighter-rouge">1.2.0-alpha02</code>, We don’t have to write all these codes just to restore the scroll position. <code class="highlighter-rouge">RecyclerView</code> offers a new API to let the Adapter block layout restoration until it is ready.</p>
+
+<p>The <code class="highlighter-rouge">recyclerview:1.2.0-alpha02</code> solution allows you to set a state restoration policy via the StateRestorationPolicy enum. This has 3 options.</p>
+
+<ol>
+  <li><strong>ALLOW</strong></li>
+  <li><strong>PREVENT_WHEN_EMPTY</strong></li>
+  <li><strong>PREVENT</strong></li>
+</ol>
+
+<p>All we have to do is set the restoration policy on the adapter like this</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">adapter</span><span class="p">.</span><span class="n">stateRestorationPolicy</span> <span class="p">=</span> <span class="nc">PREVENT_WHEN_EMPTY</span>
+</code></pre></div></div>
+
+<p>Let’s see what those options mean and how to use them.</p>
+
+<p><strong>ALLOW</strong>: This is the default state. It restores the <code class="highlighter-rouge">RecyclerView</code> state immediately, in the next layout pass.</p>
+
+<p>Since this restores the state immediately this will not be useful if you have an async operation and you are setting the adapter with the result after you get the response. This will be useful if you don’t have an async operation and are setting the <code class="highlighter-rouge">RecyclerView</code> adapter with the result list as soon as you initialize. Below you can see the gif of how it looks when applied to asynchronous vs synchronous operation</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><code class="highlighter-rouge">ALLOW</code> on sync operation</th>
+      <th style="text-align: center"><code class="highlighter-rouge">ALLOW</code> on async operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="https://github.com/AnirudhBhat/RecyclerViewScrollRestorationDemo/blob/master/gifs/allow_demo.gif?raw=true" alt="" /></td>
+      <td style="text-align: center"><img src="https://github.com/AnirudhBhat/RecyclerViewScrollRestorationDemo/blob/master/gifs/prevent_async_demo.gif?raw=true" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+<br /></p>
+
+<p><strong>PREVENT_WHEN_EMPTY</strong>: This one restores the <code class="highlighter-rouge">RecyclerView</code> state only when the adapter is not empty (adapter.itemCount &gt; 0)</p>
+
+<p>This one is suitable when you have async operation going on because <code class="highlighter-rouge">RecyclerView</code> state will be restored only after you update your adapter with the data. This can also be used with synchronous operations i.e when you already have the list ready and are populating the adapter with the list during adapter initialization provides the same result.</p>
+
+<p>In the below gif you can see that I have added a delay to fake the async operation, Once the delay is over I am populating the adapter with the list.</p>
+
+<p><img src="https://github.com/AnirudhBhat/RecyclerViewScrollRestorationDemo/blob/master/gifs/prevent_when_empty_demo.gif?raw=true" alt="" /></p>
+
+<p><br />
+<br /></p>
+
+<p><strong>PREVENT</strong>:  All state restoration is deferred until you set <code class="highlighter-rouge">ALLOW</code> or <code class="highlighter-rouge">PREVENT_WHEN_EMPTY</code>.</p>
+
+<p>When you set this restoration policy while you initialize your adapter then after you get the results and update the adapter, the scroll position will not be restored unless you set either <code class="highlighter-rouge">ALLOW</code> or <code class="highlighter-rouge">PREVENT_WHEN_EMPTY</code> while updating your adapter with the result list. So when you choose this option for your adapter then don’t forget to update your restoration policy later when you get the results back.</p>
+
+<p><br />
+<br />
+<br /></p>
+
+<p>You can find the complete code in my <a href="https://github.com/AnirudhBhat/RecyclerViewScrollRestorationDemo">Github</a> repository.</p>
+
+<p>Basically it has 3 branches apart from master.</p>
+<ol>
+  <li><strong>recyclerview_sync</strong>: In this branch you can see code which uses <code class="highlighter-rouge">ALLOW</code> restoration policy.</li>
+  <li><strong>recyclerview_async</strong>: In this branch you can see code which uses <code class="highlighter-rouge">PREVENT_WHEN_EMPTY</code> restoration policy. This repo fakes the async operation which helps in getting better understanding.</li>
+  <li><strong>recyclerview_async_prevent</strong>: In this branch you can see code which uses <code class="highlighter-rouge">PREVENT</code> restoration policy and how we are updating the restoration policy back again once we get the results.</li>
+</ol>
+
+<p><br /></p>
+
+<p><strong>Untill next time</strong></p>
+:ET
