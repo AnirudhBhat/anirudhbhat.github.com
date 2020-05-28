@@ -11,6 +11,8 @@ Have you ever ran a large number of tests in a file where few of them fails and 
 
 Well Android Studio has this small icon right below the run icon which reruns the failed tests. Screenshot will explain much better
 
+[image](https://github.com/AnirudhBhat/anirudhbhat.github.com/blob/master/assets/rerun_tests.png?raw=true)
+
 <br>
 <br>
 
