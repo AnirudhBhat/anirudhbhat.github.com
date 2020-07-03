@@ -1,0 +1,2 @@
+I"N<p>When classes become quite large (Always try to have a class with less than 200 lines :) ), it becomes hard to focus on certain piece of logic without all the noise/distraction from other code present in the same file. To solve this we can use what is called as <code class="highlighter-rouge">Regions</code> in Android studio.</p>
+:ET
