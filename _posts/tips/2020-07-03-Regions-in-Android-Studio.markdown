@@ -19,7 +19,7 @@ As the name says it basically helps in creating regions in android studio. We ca
 //endregion
 ```
 
-This is how regions looks when collapsed in Android studio
+This is how regions will look when collapsed in Android studio
 
 ![image](https://github.com/AnirudhBhat/anirudhbhat.github.com/blob/master/assets/regions_android_studio.png?raw=true)
 
