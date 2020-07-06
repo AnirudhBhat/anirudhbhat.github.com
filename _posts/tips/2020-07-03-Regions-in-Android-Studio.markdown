@@ -33,3 +33,5 @@ If you want to expand or collapse a certain region then
 Command + plus(+) expands region
 
 Command + minus(-) collapses region
+
+That's it for now. Hit me up on [twitter](https://twitter.com/abhat38) if you have any cool tips that you want to share.
