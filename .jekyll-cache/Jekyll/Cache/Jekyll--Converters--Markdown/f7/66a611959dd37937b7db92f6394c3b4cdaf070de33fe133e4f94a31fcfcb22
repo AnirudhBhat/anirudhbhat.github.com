@@ -1,0 +1,15 @@
+I"¤<p>Starting an android project from scratch requires quite a bit of boilerplate setup which involves getting all the dependencies which are up to date which itself is quite a bit of effort in itself which might take hours to do it in a correct way. Here are some of the pain points when starting new android project from scratch</p>
+
+<p><strong>Dependencies:</strong> Getting all the dependencies which are up to date itself is quite a bit of effort in itself which might take hours to do it in a correct way</p>
+
+<p><strong>Extension functions:</strong> There might be many useful extension functions we have already might be using in other projects and if we want to use those we need to remember the name of those file and copy paste it into our new project every time.</p>
+
+<p><strong>CI/CD:</strong> Setting up CI/CD is one of the first step I would prefer to do when starting a new project so that all my lint checks, unit tests are run on every push to make sure the code is working on every change.</p>
+
+<p>Now imagine doing all this every time we start new android project, whether be it for a new hobby project, to try out some new android feature or anything. By the time we finish setting up all of this we might no longer be having any energy to actually work on what we set out to or even worse thinking of all these boilerplate that needs to be setup even before trying out anything can make us to not try anything instead.</p>
+
+<p>This starter project can even come in handy when we have to start a code challenge when interviewing for new role.</p>
+
+<p>You can find the complete code in my <a href="https://github.com/AnirudhBhat/android-starter-project">Github</a> repository.</p>
+
+:ET
