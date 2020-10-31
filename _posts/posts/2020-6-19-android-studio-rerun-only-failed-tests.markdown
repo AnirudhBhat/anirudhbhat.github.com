@@ -2,7 +2,7 @@
 layout: post
 title:  "Android Studio rerun only failed tests"
 date:   2020-05-28 20:00:10 +0530
-categories: tips
+categories: blog
 ---
 
 Have you ever ran a large number of tests in a file where few of them fails and you just wanted to rerun the failed test cases again?.

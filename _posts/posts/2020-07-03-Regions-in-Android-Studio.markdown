@@ -2,7 +2,7 @@
 layout: post
 title:  "Regions in Android Studio"
 date:   2020-07-3 19:10:00 +0530
-categories: tips
+categories: blog
 ---
 
 When classes become quite large (Always try to have a class with less than 200 lines :) ), it becomes hard to focus on certain piece of logic without all the noise/distraction from other code present in the same file. To solve this we can use what is called as `Regions` in Android studio.
@@ -19,7 +19,7 @@ As the name says it basically helps in creating regions in android studio. We ca
 //endregion
 ```
 
-This is how regions will look when collapsed in Android studio
+This is how regions looks when collapsed in Android studio
 
 ![image](https://github.com/AnirudhBhat/anirudhbhat.github.com/blob/master/assets/regions_android_studio.png?raw=true)
 
@@ -33,5 +33,3 @@ If you want to expand or collapse a certain region then
 Command + plus(+) expands region
 
 Command + minus(-) collapses region
-
-That's it for now. Hit me up on [twitter](https://twitter.com/abhat38) if you have any cool tips that you want to share.

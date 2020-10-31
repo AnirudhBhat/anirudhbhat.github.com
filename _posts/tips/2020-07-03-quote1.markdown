@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "quote0"
+date:   2020-05-28 20:00:10 +0530
+categories: tips
+---
+
+> Someday at some point your whole life will be flashing in front of your eyes. Make sure its worth watching
+
+

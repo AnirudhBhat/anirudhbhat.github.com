@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "quote1"
+date:   2020-07-3 19:10:00 +0530
+categories: tips
+---
+
+> You are responsible for your own happiness. Don't expect others to give it to you.
