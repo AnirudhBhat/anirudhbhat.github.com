@@ -15,7 +15,7 @@ Let’s look at some example
 **Ask version**
 
 ```kotlin
-Class emailValidator(private val user: User) {
+Class EmailValidator(private val user: User) {
 
 	// Let's just assume for the sake of this example that once the email is validated
 	// we will set this flag to true
@@ -52,7 +52,7 @@ You see the problem in the above code?.
 **Tell version**
 
 ```kotlin
-Class emailValidator(private val user: User) {
+Class EmailValidator(private val user: User) {
 	var isEmailValid: Boolean = false
 
 	fun validateEmail() {
