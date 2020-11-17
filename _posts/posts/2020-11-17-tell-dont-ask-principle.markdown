@@ -43,9 +43,9 @@ Class Main() {
 
 You see the problem in the above code?.
 
-1. Main class knows too much about the email validator class’s internal detail
-2. All of the validation logic that Main class is doing should actually belong in EmailValidator class.
-3. Main class is using information from the Emailvalidator class data and also making decisions on that object
+1. `Main` class knows too much about the `EmailValidator` class’s internal detail
+2. All of the validation logic that `Main` class is doing should actually belong in `EmailValidator` class.
+3. `Main` class is using information from the `Emailvalidator` class data and also making decisions on that object
 
 
 
