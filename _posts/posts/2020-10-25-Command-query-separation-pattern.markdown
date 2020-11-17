@@ -9,7 +9,7 @@ This is the wikipedia definition for command query separation principle
 
 > It states that every method should either be a command that performs an action, or a query that returns data to the caller, but not both. In other words, Asking a question should not change the answer.
 
-CQS basically says that your function name **should exactly** do what it says. For example consider the below code
+CQS basically says that your function name **should exactly** say what it does. For example consider the below code
 
 ``` kotlin
 	 fun fetchNames(): List<String> {
