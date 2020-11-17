@@ -24,18 +24,6 @@ Class emailValidator(private val user: User) {
 	fun getUsersEmail(): String {
 		return user.email
 	}
-
-	fun doesEmailContainSpecialCharacter(email: String): Boolean {
-		…
-	}
-
-	fun doesEmailContainAlphabets(email: String): Boolean {
-		…
-	}
-
-	fun doesEmailHasAtLeast8Characters(email: String): Boolean {
-		…
-	}
 }
 
 Class Main() {
