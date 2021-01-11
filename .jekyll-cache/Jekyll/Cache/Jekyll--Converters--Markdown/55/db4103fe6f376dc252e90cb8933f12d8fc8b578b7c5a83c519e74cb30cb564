@@ -1,0 +1,68 @@
+I"�<p>Let’s just first get the basic definition of these 2 patterns clear.</p>
+
+<h2 id="dependency-injection">Dependency Injection:</h2>
+<p>DI is nothing but injecting the dependencies to the class needed. <strong>Giving</strong> the class all of its dependencies somehow so that the class which requires those dependencies does not have to worry about those.</p>
+
+<p>Here’s the Wikipedia definition for DI</p>
+<blockquote>
+  <p>In software engineering, dependency injection is a technique in which an object receives other objects that it depends on. These other objects are called dependencies. </p>
+</blockquote>
+
+<p>Let’s look at some very basic example of how DI looks like</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nf">add</span> <span class="p">(</span><span class="n">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here the class add needs two parameters a and b. We are supplying those parameters to the class via constructor so that the class add does not have to worry about how to get those dependencies.</p>
+
+<h2 id="service-locator">Service Locator:</h2>
+<p>SL is also a design pattern where in there will be a central place where we will be having all of the required dependencies dumped and whatever classes want dependencies can <strong>ask</strong> SL to give those dependencies to them.</p>
+
+<p>Here’s the wikipedia definition for SL</p>
+<blockquote>
+  <p>The service locator pattern is a design pattern used in software development to encapsulate the processes involved in obtaining a service with a strong abstraction layer. This pattern uses a central registry known as the “service locator”, which on request returns the information necessary to perform a certain task.</p>
+</blockquote>
+
+<p>Let’s look at some very basic example of how SL looks like</p>
+
+<p>``` kotlin
+Class ServiceLocator() {
+	fun getClass(className: String): KClass {
+		when (className) {
+		is “a” -&gt; {
+			return A()
+		}
+		is “b” -&gt; {
+			return B()
+		}
+		is “c” -&gt; {
+			return C()
+		}
+		}
+	}
+}</p>
+
+<p>Class Add () {
+	val SL = ServiceLocator()
+	return SL.getClassName(“a”).value() + SL.getClassName(“b”).value()
+}
+``</p>
+
+<p>Here the class Add has an instance of SL created inside it and <strong>asks</strong> the SL to get all the dependencies (class a and b) to finish its task.</p>
+
+<p>It both kind of sounds similar and gives us kind of similar benefits  but somewhere you are just wondering why do we have 2 names for the same pattern which does almost similar work?.</p>
+
+<p>The difference may seem slight here, but even with the ServiceLocator, the class is still responsible for creating its dependencies. It just uses the service locator to do it.  It asks ServiceLocator to get its dependencies. With DI, the class is given its dependencies. It neither knows, nor cares where they come from.</p>
+
+<p>Consider a you went to a hotel.</p>
+
+<p>SL: The service guy comes to you and takes your order and then update your order in the kitchen and brings back the food that you have ordered. Here the service guy acts as a SL, you ask your food to the service locator and he brings those food back to you</p>
+
+<p>DI: Let’s just imagine that you have been visiting that hotel for years together now and the service guy already knows your order since you have been ordering the same food for the last 1 year or so. Now, as soon as you visit that hotel the service guy knows what you want and directly goes up to the kitchen and brings back your food to the table without even asking you!</p>
+
+<p>Dependency injection seems to adhere to the “tell don’t ask” principle more than service locators. When you implement dependency injection the class basically tells which dependency it requires beforehand. Whereas in SL, the class asks for dependencies.</p>
+
+<p>In short Service Locator and Dependency Injection are just implementations of Dependency Inversion Principle.</p>
+:ET

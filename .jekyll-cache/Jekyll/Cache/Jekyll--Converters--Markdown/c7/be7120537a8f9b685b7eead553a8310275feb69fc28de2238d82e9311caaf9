@@ -1,4 +1,4 @@
-I"M<p>Tell don’t ask principle says that</p>
+I"g<p>Tell don’t ask principle says that</p>
 
 <blockquote>
   <p>Instead of asking an instance of class for data and acting on that data, we should tell an instance of class what needs to be done. Data and operations that depend on that data belong in the same object.</p>
@@ -8,7 +8,7 @@
 
 <p><strong>Ask version</strong></p>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nf">emailValidator</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">user</span><span class="p">:</span> <span class="nc">User</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nc">EmailValidator</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">user</span><span class="p">:</span> <span class="nc">User</span><span class="p">)</span> <span class="p">{</span>
 
 	<span class="c1">// Let's just assume for the sake of this example that once the email is validated</span>
 	<span class="c1">// we will set this flag to true</span>
@@ -16,18 +16,6 @@
 
 	<span class="k">fun</span> <span class="nf">getUsersEmail</span><span class="p">():</span> <span class="nc">String</span> <span class="p">{</span>
 		<span class="k">return</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span>
-	<span class="p">}</span>
-
-	<span class="k">fun</span> <span class="nf">doesEmailContainSpecialCharacter</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nc">String</span><span class="p">):</span> <span class="nc">Boolean</span> <span class="p">{</span>
-		<span class="err">…</span>
-	<span class="p">}</span>
-
-	<span class="k">fun</span> <span class="nf">doesEmailContainAlphabets</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nc">String</span><span class="p">):</span> <span class="nc">Boolean</span> <span class="p">{</span>
-		<span class="err">…</span>
-	<span class="p">}</span>
-
-	<span class="k">fun</span> <span class="nf">doesEmailHasAtLeast8Characters</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nc">String</span><span class="p">):</span> <span class="nc">Boolean</span> <span class="p">{</span>
-		<span class="err">…</span>
 	<span class="p">}</span>
 <span class="p">}</span>
 
@@ -37,10 +25,10 @@
 		<span class="nc">Val</span> <span class="n">email</span> <span class="p">=</span> <span class="nf">getUsersEmail</span><span class="p">()</span>
 		<span class="k">if</span> <span class="p">(</span><span class="n">email</span><span class="p">.</span><span class="n">length</span> <span class="p">&gt;</span> <span class="mi">8</span> <span class="p">&amp;&amp;</span> <span class="n">email</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="err">“</span><span class="n">special</span> <span class="n">characters</span><span class="err">”</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">email</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="err">“</span><span class="n">at</span> <span class="n">least</span> <span class="mi">1</span> <span class="n">number</span><span class="err">”</span><span class="p">))</span> <span class="p">{</span>
 			<span class="c1">// validated email</span>
-			<span class="n">emailValidator</span><span class="p">.</span><span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">true</span>
+			<span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">true</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 			<span class="c1">// In correct email</span>
-			<span class="n">emailValidator</span><span class="p">.</span><span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">false</span>
+			<span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">false</span>
 		<span class="p">}</span>
 	<span class="p">}</span>
 <span class="p">}</span>
@@ -49,14 +37,14 @@
 <p>You see the problem in the above code?.</p>
 
 <ol>
-  <li>Main class knows too much about the email validator class’s internal detail</li>
-  <li>All of the validation logic that Main class is doing should actually belong in EmailValidator class.</li>
-  <li>Main class is using information from the Emailvalidator class data and also making decisions on that object</li>
+  <li><code class="highlighter-rouge">Main</code> class knows too much about the <code class="highlighter-rouge">EmailValidator</code> class’s internal detail</li>
+  <li>All of the validation logic that <code class="highlighter-rouge">Main</code> class is doing should actually belong in <code class="highlighter-rouge">EmailValidator</code> class.</li>
+  <li><code class="highlighter-rouge">Main</code> class is using information from the <code class="highlighter-rouge">Emailvalidator</code> class data and also making decisions on that object</li>
 </ol>
 
 <p><strong>Tell version</strong></p>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nf">emailValidator</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">user</span><span class="p">:</span> <span class="nc">User</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nc">EmailValidator</span><span class="p">(</span><span class="k">private</span> <span class="kd">val</span> <span class="py">user</span><span class="p">:</span> <span class="nc">User</span><span class="p">)</span> <span class="p">{</span>
 	<span class="kd">var</span> <span class="py">isEmailValid</span><span class="p">:</span> <span class="nc">Boolean</span> <span class="p">=</span> <span class="k">false</span>
 
 	<span class="k">fun</span> <span class="nf">validateEmail</span><span class="p">()</span> <span class="p">{</span>
@@ -64,9 +52,9 @@
 		<span class="err">…</span>
 
 		<span class="k">if</span> <span class="p">(</span><span class="n">validEmail</span><span class="p">)</span> <span class="p">{</span>
-			<span class="n">emailValidator</span><span class="p">.</span><span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">true</span>
+			<span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">true</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-			<span class="n">emailValidator</span><span class="p">.</span><span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">false</span>
+			<span class="n">isEmailValid</span> <span class="p">=</span> <span class="k">false</span>
 		<span class="p">}</span>
 		<span class="err">…</span>
 	<span class="p">}</span>
