@@ -1,0 +1,55 @@
+I"ð<p>Functional programming is a programming paradigm where programs are constructed using few principles. Letâ€™s see what those principles are and how it is better than the regular oop.</p>
+
+<ol>
+  <li>
+    <h2 id="declarative">Declarative</h2>
+    <ol>
+      <li>Focus on what rather than how, we have seen functions like <code class="highlighter-rouge">filter</code>, <code class="highlighter-rouge">map</code>, <code class="highlighter-rouge">forEach</code>.</li>
+      <li>These methods focus on <strong>what</strong> it does rather then <strong>how</strong> it does the operation.</li>
+    </ol>
+
+    <p><br /></p>
+  </li>
+  <li>
+    <h2 id="pure-functions">Pure functions</h2>
+    <ol>
+      <li>Function which always gives the same output based on the input. Call this function a thousand times and you will get the same output every single time.</li>
+      <li>Pure functions will be independent of the outside world.</li>
+      <li>Pure functions will not be having any side effects, no more surprises of figuring out why the boolean was changed when you were calling particular function</li>
+      <li>Pure functions are easier to test. Since its independent and has no side effects</li>
+    </ol>
+
+    <p><br /></p>
+  </li>
+  <li>
+    <h2 id="immutability">Immutability</h2>
+    <ol>
+      <li>Your model classes should be immutable</li>
+      <li>Want something different?. Make a new one</li>
+    </ol>
+
+    <p><br /></p>
+  </li>
+  <li>
+    <h2 id="concurrent">Concurrent</h2>
+    <ol>
+      <li>Pure functions can be executed in any order since those operate on immutable objects and will not have any side effects</li>
+      <li>No unexpected behaviour</li>
+    </ol>
+
+    <p><br /></p>
+  </li>
+  <li>
+    <h2 id="higher-order-functions">Higher order functions</h2>
+    <ol>
+      <li>Functions are first class citizens</li>
+      <li>Pass function to a function</li>
+      <li>Return function as a result from another function</li>
+    </ol>
+
+    <p><br /></p>
+  </li>
+</ol>
+
+<p><strong>Until next time</strong></p>
+:ET
