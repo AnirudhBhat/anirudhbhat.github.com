@@ -6,7 +6,7 @@ permalink: /hello-automattic/
 
 # Hello Automattic! 👋
 
-<p>I'm very happy to express my interest in joining your team as an Android Engineer!</p>
+<p>I'm very happy to express my interest in joining your team as a Mobile Engineer!</p>
 
 <p>I've been following Automattic since long time and have read your blogs and watched Matt Mullenweg's interviews. Every time i read one of your blogs or use your product my interest to join Automattic has only been increasing</p>
 
