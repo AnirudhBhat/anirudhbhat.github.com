@@ -74,3 +74,6 @@ Although this was not that complex to figure out it was fun doing this.
 
 You can find my open source side projects from my [Github](https://github.com/AnirudhBhat/)
 
+<br/>
+Let's talk!
+
