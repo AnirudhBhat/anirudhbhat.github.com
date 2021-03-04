@@ -10,7 +10,7 @@ permalink: /hello-automattic/
 
 <p>I've been following Automattic since long time and have read your blogs and watched Matt Mullenweg's interviews. Every time i read one of your blogs or use your product my interest to join Automattic has only been increasing</p>
 
-<p>I will give you 3 reasons for hiring me, i will explain my motivation, and i will list the projects that i have worked on</p>
+<p>I will give you 3 reasons for hiring me, i will explain my motivation, and i will list the relevant projects that i have worked on</p>
 
 *First*, I can write clean code that solves complex problems. I always believe that design patterns, SOLID principles and architecture are far more important than the technology or the language we use to solve the problem. I like to keep things as boring and simple as possible. Technology is a means and not an end.
 
@@ -43,6 +43,8 @@ love the company's open source first approach. I also love the way the company i
 **Learnings:** 
 1. It’s impossible to scale an app without proper design system in place.
 2. Rewriting an old feature with zero unit tests and get the requirement’s right is quite hard. Knew this beforehand but experienced it first hand
+
+In the job posting, it was mentioned that the team is looking for someone with experience in Social or content-oriented native apps. This project is very much social and content-oriented. 
 
 <br/>
 
