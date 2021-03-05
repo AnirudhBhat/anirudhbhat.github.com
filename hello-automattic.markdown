@@ -18,7 +18,7 @@ permalink: /hello-automattic/
 
 *Third*, I am a team player. I always try to give positive feedback during code reviews and does not nitpick on small things which really aren't important on the higher level. I love to work with people who show empathy and kindness. I have been in a situation where i understand being calm and showing kindness goes a long way.
 
-and why Automattic? All these years most of my work has been closed source except for my side projects which are available on Github. I really amire that all of the Automattic's android apps are open source and i also
+and why Automattic? All these years most of my work has been closed source except for my side projects which are available on Github. I really admire that all of the Automattic's android apps are open source and i also
 love the company's open source first approach. I also love the way the company is run, the philosophy behind it and the hiring ethics.
 
 
