@@ -1,10 +1,10 @@
-I"�<h1 id="hello-automattic-">Hello Automattic! 👋</h1>
+I"i<h1 id="hello-automattic-">Hello Automattic! 👋</h1>
 
-<p>I'm very happy to express my interest in joining your team as an Android Engineer!</p>
+<p>I'm very happy to express my interest in joining your team as a Mobile Engineer!</p>
 
 <p>I've been following Automattic since long time and have read your blogs and watched Matt Mullenweg's interviews. Every time i read one of your blogs or use your product my interest to join Automattic has only been increasing</p>
 
-<p>I will give you 3 reasons for hiring me, i will explain my motivation, and i will list the projects that i have worked on</p>
+<p>I will give you 3 reasons for hiring me, i will explain my motivation, and i will list the relevant projects that i have worked on</p>
 
 <p><em>First</em>, I can write clean code that solves complex problems. I always believe that design patterns, SOLID principles and architecture are far more important than the technology or the language we use to solve the problem. I like to keep things as boring and simple as possible. Technology is a means and not an end.</p>
 
@@ -12,7 +12,7 @@
 
 <p><em>Third</em>, I am a team player. I always try to give positive feedback during code reviews and does not nitpick on small things which really aren’t important on the higher level. I love to work with people who show empathy and kindness. I have been in a situation where i understand being calm and showing kindness goes a long way.</p>
 
-<p>and why Automattic? All these years most of my work has been closed source except for my side projects which are available on Github. I really amire that all of the Automattic’s android apps are open source and i also
+<p>and why Automattic? All these years most of my work has been closed source except for my side projects which are available on Github. I really admire that all of the Automattic’s android apps are open source and i also
 love the company’s open source first approach. I also love the way the company is run, the philosophy behind it and the hiring ethics.</p>
 
 <h2 id="projects">Projects</h2>
@@ -43,6 +43,8 @@ love the company’s open source first approach. I also love the way the company
   <li>Rewriting an old feature with zero unit tests and get the requirement’s right is quite hard. Knew this beforehand but experienced it first hand</li>
 </ol>
 
+<p>In the job posting, it was mentioned that the team is looking for someone with experience in Social or content-oriented native apps. This project is very much social and content-oriented.</p>
+
 <p><br /></p>
 
 <p><strong>Bytemark</strong>
@@ -69,7 +71,7 @@ love the company’s open source first approach. I also love the way the company
   <li>java/kotlin</li>
 </ol>
 
-<p><strong>Interesting challenge that I faced:</strong> our iOS apps were getting rejected by apple for some weird reason. My then colleague (Now my wife :)) and I sat together to figure out why apple was rejecting our apps and later found out it was because of slow startup time. Apple has this set startup time within which all apps should start and be ready to use. Our apps were failing to start within that time on some of the iPhones and that too it wasn’t quite reproducible always. We checked the code written in our splash screen and everything looked fine, calls were being made on background thread. After some time we figured out that we were using a SDK (Remember the SDK that I mentioned above?) which was being initialised on app startup and it internally was setting up maps and few other stuff which was resulting in slow startup times.</p>
+<p><strong>Interesting challenge that I faced:</strong> our iOS apps were getting rejected by apple for some weird reason. My then colleague (Now my wife :)) and I sat together to figure out why apple was rejecting our apps and later found out it was because of slow startup time. Apple has this set startup time within which all apps should start and be ready to use. Our apps were failing to start within that time on some of the iPhones and that too it wasn’t quite reproducible always. We checked the code written in our splash screen and everything looked fine, calls were being made on background thread. After some time we figured out that we were using a SDK which was being initialised on app startup and it internally was setting up maps and few other stuff which was resulting in slow startup times.</p>
 
 <p>Although this was not that complex to figure out it was fun doing this.</p>
 
