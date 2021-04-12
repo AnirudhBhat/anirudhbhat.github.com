@@ -61,6 +61,8 @@ class GuardianNews(): News {
 }
 ```
 
+This is how `getHeadlines` looks like now
+
 ``` kotlin
 fun getHeadlines(newsSource: News) {
     newsSource.fetchNews()
@@ -68,7 +70,7 @@ fun getHeadlines(newsSource: News) {
 ```
 
 
-we can call this function as shown below
+we can now call `getHeadlines` function as shown below
 
 ``` kotlin
 getHeadlines(BBCNews()) // for BBC news

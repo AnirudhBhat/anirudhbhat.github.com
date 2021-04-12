@@ -1,4 +1,4 @@
-I"�<p>Yes, conditional statements are considered code smell if they are used extensively all over the project. alrighty,  let us jump straight to the example to understand <strong>why</strong>.</p>
+I"�<p>Yes, conditional statements are considered <a href="https://en.wikipedia.org/wiki/Code_smell">code smell</a> if they are used extensively all over the project. alrighty,  let us jump straight to the example to understand <strong>why</strong>.</p>
 
 <p>let’s assume we are making a network request to different news sources to get the top headlines from each source.</p>
 
@@ -16,14 +16,14 @@
 <h2 id="problems">Problems</h2>
 
 <ol>
-  <li>getHeadlines is clearly handling more than one responsibility, currently, it’s handling 3 responsibilities.</li>
+  <li><code class="highlighter-rouge">getHeadlines</code> is clearly handling more than one responsibility, currently, it’s handling 3 responsibilities.</li>
   <li>If we want to add a new source in the future we have to touch this piece of logic which we don’t want to do. We want this method to be future proof so that even if we need to add few more sources in the future we don’t even have to do anything in this method.</li>
 </ol>
 
 <p><br /></p>
 
 <h2 id="how-can-we-improve-this">How can we improve this</h2>
-<p>We can use one of the OOP concept Polymorphism to solve this to make our code cleaner. Let’s see how</p>
+<p>We can use one of the OOP concept <a href="https://en.wikipedia.org/wiki/Polymorphism_(computer_science)">Polymorphism</a> to solve this to make our code cleaner. Let’s see <strong>how</strong></p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">News</span> <span class="p">{</span>
    <span class="k">fun</span> <span class="nf">fetchNews</span><span class="p">()</span>
@@ -50,12 +50,14 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
+<p>This is how <code class="highlighter-rouge">getHeadlines</code> looks like now</p>
+
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">getHeadlines</span><span class="p">(</span><span class="n">newsSource</span><span class="p">:</span> <span class="nc">News</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">newsSource</span><span class="p">.</span><span class="nf">fetchNews</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>we can call this function as shown below</p>
+<p>we can now call <code class="highlighter-rouge">getHeadlines</code> function as shown below</p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">getHeadlines</span><span class="p">(</span><span class="nc">BBCNews</span><span class="p">())</span> <span class="c1">// for BBC news</span>
 </code></pre></div></div>
@@ -66,6 +68,9 @@
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">getHeadlines</span><span class="p">(</span><span class="nc">GuardianNews</span><span class="p">())</span> <span class="c1">// for Guardian news</span>
 </code></pre></div></div>
 
+<p><br /></p>
+
+<h2 id="what-if-i-want-to-add-new-source">What if i want to add new source?</h2>
 <p>Got new source?. Just do this</p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CNBCNews</span><span class="p">():</span> <span class="nc">News</span> <span class="p">{</span>
@@ -75,13 +80,17 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">getHeadlines</span><span class="p">(</span><span class="nc">CNBCNews</span><span class="p">())</span> <span class="c1">// foe CNBC news</span>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">getHeadlines</span><span class="p">(</span><span class="nc">CNBCNews</span><span class="p">())</span> <span class="c1">// for CNBC news</span>
 </code></pre></div></div>
 
-<p>Now getHeadlines method is much cleaner to read and is clearly handling single responsibility. Also, we don’t need to touch on this method if we want to add a new source in the future.</p>
+<p><br /></p>
 
-<p>Now the above method is much cleaner and is clearly handling single responsibility. Also, if we want to add one more news source all we have to do is write a function that implements News and override the fetchNews method according to its need. We don’t even have to touch this piece of code for adding future sources. How awesome is that!</p>
+<p>Now <code class="highlighter-rouge">getHeadlines</code> method is much cleaner to read and is clearly handling single responsibility. Also, we don’t need to touch on this method if we want to add a new source in the future. How awesome is that!</p>
 
-<p>so, whenever you see conditional statements which especially operate on types then consider replacing those with OOP concepts and design patterns</p>
+<p>so, whenever you see conditional statements which especially operate on type of the object then consider replacing those with OOP concepts and design patterns</p>
+
+<p><br /></p>
+
+<p><strong>Untill next time</strong></p>
 
 :ET
