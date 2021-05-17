@@ -17,7 +17,7 @@ Once you settle for being ordinary, not caring or comparing with others, you sta
 
 We should naturally try to give the journey more attention, We should look out of the window and try to appreciate the view whenever we can.
 
-**Don't attach your professional life with your identity. You are much more than that.**
+**Don't attach your professional life with your identity. You are not your job. You are much more than that.**
 
 <br/>
 
