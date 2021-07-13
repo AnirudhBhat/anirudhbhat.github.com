@@ -1,0 +1,40 @@
+I"�<p>If you have developed an Android app you must have known these three attributes which are compulsory for any Android project. But, what are those? How does this matter for our app? Let’s understand this.</p>
+
+<p><strong>minSDKVersion:</strong> This is an easy one. As the name says, it indicates the minimum SDK version on which the app will run. For example, if minSDKVersion is set to 21 (Android  Lollipop) then the app will run only on devices &gt;= 21. The app cannot be run on any version lower than 21.</p>
+
+<p>If you have a device that runs on OS &lt; 21 and if you try to search any app which has min SDK set to &gt;= 21. You won’t find it since your device does not meet the min SDK requirement.</p>
+
+<p>There is a very good chance that the app might break on devices &lt; min SDK version set by the app because it was not designed to support it.</p>
+
+<p><br /></p>
+
+<p><strong>targetSDKVersion:</strong>  TargetSDK version tells the system which Android version was used to design and test the app. 
+For example, When using an app that targets Android 12, users can request that the app have access to only <a href="https://developer.android.com/about/versions/12/behavior-changes-12#privacy">approximate location</a> information instead of precise location information. If your target version is Android 31 and given, you satisfy the necessary permissions, the user will get to see this option.</p>
+
+<p>now, what if the target SDK version is 29 and the user who is running our app is on Android version 31? Well, since we have told Android that our app was designed with target version of 29. Android system takes care of NOT showing the user an option to select an approximate location.</p>
+
+<p>It’s good to increase our target and compile SDK version periodically since our app might break if we are much behind what google has released.</p>
+
+<p><br /></p>
+
+<p><strong>compileSDKVersion:</strong> CompileSDK version basically tells that which SDK version we have used to develop the app. This decides which Android APIs are available for us to make use of.</p>
+
+<p>for example, If our app’s compile SDK version is 31, Android 12 adds the <a href="https://developer.android.com/about/versions/12/features/splash-screen">SplashScreen API</a>, which enables a new app launch animation for all apps. This includes an into-app motion at launch, a splash screen showing your app icon, and a transition to your app itself. We can make use of this API ONLY if we have compile SDK version of 31. Also, we need to keep in mind that we need to support backward compatibility as well for devices that are less than 31.</p>
+
+<p>Now, what if our app had compile SDK version of 30? Could we have used the new splash screen API? No, we cannot. That’s why it’s important to set proper compile SDK version to make use of the APIs that Google provides us.</p>
+
+<p>Most of the confusion is generally around TargetSDKVersion vs CompileSDKVersion (at least, it was for me :)). So, one-liner to understand the difference between the two is</p>
+
+<p>TargetSDK version is used to make our app compatible with the new system-level changes that Android OS brings in newer versions.
+CompileSDKVersion is used to make use of newer APIs that Google provides us.</p>
+
+<p>Target SDK version must never be &gt; compile SDK version because there will be a good chance that our app breaks if we target a higher API version than compile since we have never developed our app for the target SDK version’s new features.</p>
+
+<p>or simply because we can never target for something which we have not designed for right?</p>
+
+<p>Hence, our target and compile SDK versions should always be the latest and both must be equal.</p>
+
+<p><br /></p>
+
+<p><strong>Untill next time 👋</strong></p>
+:ET
