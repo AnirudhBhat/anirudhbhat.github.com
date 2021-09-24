@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "quote2"
+date:   2021-09-24 17:47:00 +0530
+categories: tips
+---
+
+> Always leave room for the unexpected. A buffer of time, a little extra money, a reserve of goodwill. You won't be maximising every opportunity or squeezing out every last dollar, but what you lose in reward, you gain in safety.
+Survival is the highest return of all.
