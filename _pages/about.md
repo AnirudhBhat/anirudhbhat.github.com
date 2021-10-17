@@ -11,7 +11,7 @@ I am an Android developer with a passion for writing clean and maintainable code
 
 
 # **Work**
-Building the [Noon academy](https://play.google.com/store/apps/details?id=com.noonEdu.k12App&hl=en_IN) app
+Mobile wrangling at [Automattic](https://automattic.com/). Previously, [Noon academy](https://play.google.com/store/apps/details?id=com.noonEdu.k12App&hl=en_IN)
 
 
 # **Outside of work**
