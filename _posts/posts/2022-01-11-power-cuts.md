@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Power Cuts!"
+title:  "Power Cuts and Creativity!"
 date:   2022-01-10 01:30:00 +0530
 categories: blog
 ---
