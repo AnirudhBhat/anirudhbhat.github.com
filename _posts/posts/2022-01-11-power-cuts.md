@@ -35,7 +35,5 @@ Artists have always understood that solitude and boredom are essential to the cr
 
 Don't wait for power cuts and start keeping just a few minutes aside in your busy schedule for just pondering, mind wandering, or for boredom. It can change your life!
 
-Until next time
-
 
 **Untill next time 👋**
