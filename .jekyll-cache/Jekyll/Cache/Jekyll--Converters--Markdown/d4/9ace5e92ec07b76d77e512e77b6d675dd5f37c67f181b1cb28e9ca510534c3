@@ -1,0 +1,8 @@
+I"!<ol>
+  <li>A routine is just a sequence of operations/actions which gets executed one by one in the exact same order as specified.
+<br /></li>
+  <li>Co stands for cooperation. A co routine suspend its execution to give other co-routines a chance to execute. So a co-routine is about sharing CPU resources so others can use the same resource.
+<br /></li>
+  <li>A coroutine is an instance of suspendable computation. coroutine is not bound to any particular thread. It may suspend its execution in one thread and resume in another one.</li>
+</ol>
+:ET
