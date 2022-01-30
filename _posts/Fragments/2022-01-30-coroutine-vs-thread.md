@@ -14,3 +14,7 @@ Threads consume resources. Every thread will be having its own stack. Because of
 Coroutines don't involve system/kernel APIs and hence they are not costlier to switch. Also, the memory footprint is less. The number of Coroutines created is not directly proportional to memory usage
 
 Coroutine is not bound to any particular thread. It may suspend its execution in one thread and resume in another one.
+
+<br />
+
+**Untill next time 👋**
