@@ -12,6 +12,14 @@ permalink: /travel/
 
 <br/>
 
+**Chickmagalur**
+
+- [Mullayana Giri](https://en.wikipedia.org/wiki/Mullayyana_Giri)
+- [Baba Budan Giri](https://en.wikipedia.org/wiki/Baba_Budan_giri)
+- [Jhari Waterfalls](https://www.tripadvisor.in/Attraction_Review-g297629-d10423861-Reviews-Jhari_Waterfalls-Chikmagalur_Chikkamagaluru_District_Karnataka.html)
+
+<br/>
+
 **Madikeri**
 
 - [Mandalpatti](https://coorgtourism.co.in/mandalpatti-trek-coorg)
