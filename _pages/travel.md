@@ -41,6 +41,8 @@ permalink: /travel/
 **Kolar**
 - [Kolaramma temple](https://en.wikipedia.org/wiki/Kolaramma)
 
+<br/>
+
 **Mysore**
  - [Mysore Zoo](https://en.wikipedia.org/wiki/Mysore_Zoo)
  - [Shuka Vana](https://www.holidify.com/places/mysore/shuka-vana-sightseeing-120775.html)
