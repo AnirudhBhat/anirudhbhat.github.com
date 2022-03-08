@@ -7,6 +7,10 @@ permalink: /movies/
 # **Movies I have watched**
 
 
+ - [Love Mocktail 2](https://en.wikipedia.org/wiki/Love_Mocktail_2)
+ - [Love Mocktail](https://en.wikipedia.org/wiki/Love_Mocktail)
+ - [The weekend away](https://en.wikipedia.org/wiki/The_Weekend_Away)
+ - [Rocket boys](https://www.imdb.com/title/tt13868972/)
  - [Clickbait](https://en.wikipedia.org/wiki/Clickbait_(miniseries))
  - [The Innocent](https://en.wikipedia.org/wiki/The_Innocent_(TV_series))
  - [The Invisible Guest](https://en.wikipedia.org/wiki/The_Invisible_Guest)
