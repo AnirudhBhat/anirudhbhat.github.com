@@ -7,6 +7,8 @@ permalink: /movies/
 # **Movies I have watched**
 
 
+ - [The Kashmir Files](https://en.wikipedia.org/wiki/The_Kashmir_Files)
+ - [The Intern](https://en.wikipedia.org/wiki/The_Intern_(2015_film))
  - [Love Mocktail 2](https://en.wikipedia.org/wiki/Love_Mocktail_2)
  - [Love Mocktail](https://en.wikipedia.org/wiki/Love_Mocktail)
  - [The weekend away](https://en.wikipedia.org/wiki/The_Weekend_Away)
