@@ -1,0 +1,55 @@
+I"!<p>There are two instances of coroutine context available. One is from the <code class="highlighter-rouge">CoroutineScope</code> and the other is an instance from <code class="highlighter-rouge">CoroutineContext</code> itself.</p>
+
+<p>When we use coroutine builders like <code class="highlighter-rouge">launch</code> or <code class="highlighter-rouge">async</code>, we get 2 coroutine context. One from coroutinescope and another from the coroutine builder.</p>
+
+<p>coroutine builders take “coroutine context” as one of the parameters.</p>
+
+<p>coroutine builder merges its coroutine context with its scope’s coroutine context. However, the coroutine builder’s coroutine context gets higher priority.</p>
+
+<p>The context we get from merging both the context becomes the parent for the newly launched coroutine.</p>
+
+<pre><code class="language-Kotlin">
+coroutineScope { // context from coroutine scope: a
+    launch() { // context from coroutine builder: b
+    ....... // This coroutine builder will have a+b with b taking precedence, as its parent context.
+    }
+}
+
+</code></pre>
+
+<p>From the above code, coroutine builder can add its own element to the context and it overwrites the scope’s context elements.</p>
+
+<p><br /></p>
+
+<h2 id="job">Job</h2>
+
+<pre><code class="language-Kotlin">
+coroutineScope { // Job from coroutine scope: a
+    launch() { // child job from coroutine builder with a as its parent: b. i.e a ---&gt; b
+    ....... // Observe the parent-child relationship between scope's job and coroutine builder's job. This is the reason cancelling the parent job cancells all the children jobs as well since parent //has reference to all of its children.
+
+    // also, the context for coroutine builder will consist of new job instance. i.e b, along with the parent(a) context
+    }
+}
+
+</code></pre>
+
+<pre><code class="language-Kotlin">
+coroutineScope { // Job from coroutine scope: a
+    launch(new Job b) { // coroutine builder explicitly creates a new job b
+    ....... // Here you are basically breaking the parent-child relationship by //creating explicitly a new job for coroutine builder. If you cancel the parent scope now, the child will not be cancelled.
+    }
+}
+
+</code></pre>
+
+<p>In the above code, if you replace <code class="highlighter-rouge">coroutineScope</code> with <code class="highlighter-rouge">GlobalScope</code>, you loose the control of canceling all the child coroutines since <code class="highlighter-rouge">GlobalScope</code> doesn’t return any job. That’s what it means, <code class="highlighter-rouge">GlobalScope</code> runs globally and terminates only when our process terminates.</p>
+
+<p>The intended purpose of <code class="highlighter-rouge">CoroutineScope</code> receiver in launch and in all the other coroutine builders is to reference a scope in which new coroutine is launched</p>
+
+<p>The intended purpose of context: CoroutineContext parameter in launch is to provide additional context elements to override elements that would be otherwise inherited from a parent scope</p>
+
+<p><br /></p>
+
+<p><strong>Untill next time 👋</strong></p>
+:ET

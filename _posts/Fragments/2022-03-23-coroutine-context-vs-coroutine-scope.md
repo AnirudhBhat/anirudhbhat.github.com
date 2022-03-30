@@ -8,9 +8,9 @@ categories: fragments
 
 
 
-There are two instances of coroutine context available. One is from the CoroutineScope and the other is an instance from CoroutineContext itself.
+There are two instances of coroutine context available. One is from the `CoroutineScope` and the other is an instance from `CoroutineContext` itself.
 
-When we use coroutine builders like "launch" or "async", we get 2 coroutine context. One from coroutinescope and another from the coroutine builder.
+When we use coroutine builders like `launch` or `async`, we get 2 coroutine context. One from coroutinescope and another from the coroutine builder.
 
 coroutine builders take "coroutine context" as one of the parameters.
 
@@ -18,17 +18,23 @@ coroutine builder merges its coroutine context with its scope's coroutine contex
 
 The context we get from merging both the context becomes the parent for the newly launched coroutine. 
 
+```Kotlin
+
 coroutineScope { // context from coroutine scope: a
     launch() { // context from coroutine builder: b
     ....... // This coroutine builder will have a+b with b taking precedence, as its parent context.
     }
 }
 
+```
+
 From the above code, coroutine builder can add its own element to the context and it overwrites the scope's context elements.
 
+<br />
 
-Job
+## Job
 
+```Kotlin
 
 coroutineScope { // Job from coroutine scope: a
     launch() { // child job from coroutine builder with a as its parent: b. i.e a ---> b
@@ -38,6 +44,9 @@ coroutineScope { // Job from coroutine scope: a
     }
 }
 
+```
+
+```Kotlin
 
 coroutineScope { // Job from coroutine scope: a
     launch(new Job b) { // coroutine builder explicitly creates a new job b
@@ -45,10 +54,12 @@ coroutineScope { // Job from coroutine scope: a
     }
 }
 
-In the above code, if you replace coroutineScope with GlobalScope, you loose the control of canceling all the child coroutines since GlobalScope doesn't return any job. That's what it means, GlobalScope runs globally and terminates only when our process terminates.
+```
+
+In the above code, if you replace `coroutineScope` with `GlobalScope`, you loose the control of canceling all the child coroutines since `GlobalScope` doesn't return any job. That's what it means, `GlobalScope` runs globally and terminates only when our process terminates.
 
 
-The intended purpose of CoroutineScope receiver in launch and in all the other coroutine builders is to reference a scope in which new coroutine is launched
+The intended purpose of `CoroutineScope` receiver in launch and in all the other coroutine builders is to reference a scope in which new coroutine is launched
 
 The intended purpose of context: CoroutineContext parameter in launch is to provide additional context elements to override elements that would be otherwise inherited from a parent scope
 
