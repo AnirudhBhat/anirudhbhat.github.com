@@ -7,7 +7,7 @@ permalink: /movies/
 # **Movies I have watched**
 
 
- 
+ - [Top Gun: Maverick](https://en.wikipedia.org/wiki/Top_Gun:_Maverick)
  - [Sakutumba Sametha](https://www.youtube.com/watch?v=9HaHwo5yqIc)
  - [Gifted](https://en.wikipedia.org/wiki/Gifted_(2017_film))
  - [Ford vs Ferrari](https://en.wikipedia.org/wiki/Ford_v_Ferrari)
