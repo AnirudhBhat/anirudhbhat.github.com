@@ -7,6 +7,8 @@ permalink: /movies/
 # **Movies I have watched**
 
 
+ - [777 Charlie](https://en.wikipedia.org/wiki/777_Charlie)
+ - [KGF 2](https://en.wikipedia.org/wiki/K.G.F:_Chapter_2)
  - [Top Gun: Maverick](https://en.wikipedia.org/wiki/Top_Gun:_Maverick)
  - [Sakutumba Sametha](https://www.youtube.com/watch?v=9HaHwo5yqIc)
  - [Gifted](https://en.wikipedia.org/wiki/Gifted_(2017_film))
