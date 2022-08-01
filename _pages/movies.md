@@ -6,7 +6,9 @@ permalink: /movies/
 
 # **Movies I have watched**
 
-
+ - [Wrath of Man](https://en.wikipedia.org/wiki/Wrath_of_Man)
+ - [Soul](https://en.wikipedia.org/wiki/Soul_(2020_film))
+ - [The Pixar Story](https://en.wikipedia.org/wiki/The_Pixar_Story)
  - [777 Charlie](https://en.wikipedia.org/wiki/777_Charlie)
  - [KGF 2](https://en.wikipedia.org/wiki/K.G.F:_Chapter_2)
  - [Top Gun: Maverick](https://en.wikipedia.org/wiki/Top_Gun:_Maverick)
