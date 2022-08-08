@@ -6,6 +6,7 @@ permalink: /movies/
 
 # **Movies I have watched**
 
+ - [Rocketry: The Nambi Effect](https://en.wikipedia.org/wiki/Rocketry:_The_Nambi_Effect)
  - [Wrath of Man](https://en.wikipedia.org/wiki/Wrath_of_Man)
  - [Soul](https://en.wikipedia.org/wiki/Soul_(2020_film))
  - [The Pixar Story](https://en.wikipedia.org/wiki/The_Pixar_Story)
