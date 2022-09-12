@@ -6,6 +6,8 @@ permalink: /movies/
 
 # **Movies I have watched**
 
+ - [Vikrant Rona](https://en.wikipedia.org/wiki/Vikrant_Rona)
+ - [Gaalipata 2](https://en.wikipedia.org/wiki/Gaalipata_2)
  - [Rocketry: The Nambi Effect](https://en.wikipedia.org/wiki/Rocketry:_The_Nambi_Effect)
  - [Wrath of Man](https://en.wikipedia.org/wiki/Wrath_of_Man)
  - [Soul](https://en.wikipedia.org/wiki/Soul_(2020_film))
