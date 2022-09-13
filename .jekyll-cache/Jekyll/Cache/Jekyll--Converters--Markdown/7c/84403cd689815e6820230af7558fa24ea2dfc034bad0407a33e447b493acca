@@ -1,0 +1,22 @@
+I"U<p><strong>Empathy during the code review:</strong> This is a big one for me. Always keep in mind that you are reviewing the code and not the author. I’ve been on the other side to know how it feels when the reviewer is not empathetic. If you think some piece of logic can be done in a better way. Provide concrete examples and <strong>explain</strong> why you think your example is better than theirs. Also, this should never be forced upon the author and act as a blocker for PR merge.</p>
+
+<p><strong>Automate nitpicks:</strong> It’s waste of time for both the reviewer and the author to nitpick on tiny things. Catching these things should be automated.</p>
+
+<p><strong>Use emojis to let the author know your intentions:</strong></p>
+
+<ul>
+  <li>
+    <p>🔍 Nitpick/Not important at all</p>
+  </li>
+  <li>❓ I’d like to understand this more, but definitely not blocking the PR</li>
+  <li>💡 An idea how to possible improve the code (the fact that it improves the code is just my opinion)</li>
+  <li>⚠️ Something I’d really like to discuss before merging the PR - still not a blocker, but something I care about</li>
+  <li>⛔ Blocker - I think this could affect users</li>
+</ul>
+
+<p>Blockers are only those that have some sort of issue with the code in the PR. Doesn’t work as expected, has unintended side effect…etc</p>
+
+<p>Rest everything are your opinions. Your opinions MUST never be the reason for blocking the PR from merge. Use proper emojis to suggest the changes and leave the decision to the author. Approve the PR.</p>
+
+<p>Appreciate if you see something that is done beautifully.</p>
+:ET
