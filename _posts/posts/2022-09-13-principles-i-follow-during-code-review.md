@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Principles I follow during the code review"
-date:   2022-09-13 16:40:00 +0530
+date:   2022-09-13 15:40:00 +0530
 categories: blog
 ---
 
