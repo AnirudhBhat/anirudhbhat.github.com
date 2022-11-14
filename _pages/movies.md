@@ -6,6 +6,7 @@ permalink: /movies/
 
 # **Movies I have watched**
 
+ - [Kantara](https://en.wikipedia.org/wiki/Kantara_(film))
  - [Vikrant Rona](https://en.wikipedia.org/wiki/Vikrant_Rona)
  - [Gaalipata 2](https://en.wikipedia.org/wiki/Gaalipata_2)
  - [Rocketry: The Nambi Effect](https://en.wikipedia.org/wiki/Rocketry:_The_Nambi_Effect)
