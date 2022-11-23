@@ -17,7 +17,7 @@ Mobile wrangling at [Automattic](https://automattic.com/). Previously, [Noon aca
 # **Outside of work**
 I have a very beautiful wife with whom i spend **most** of my time
 
-I love travelling and lifting weights.
+I love reading, travelling and lifting weights.
 
 
 # **Contacting Me**
