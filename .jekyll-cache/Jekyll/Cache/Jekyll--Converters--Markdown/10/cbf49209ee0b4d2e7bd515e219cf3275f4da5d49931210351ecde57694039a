@@ -1,0 +1,64 @@
+I"Ó<p>In no particular order:</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">Command + l</code> -&gt; Go to line</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + 6</code> -&gt; Open logcat window</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + e</code> -&gt; Open recently viewed files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + 1</code> -&gt; Toggle project window</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + 4</code> -&gt; Toggle run window</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + 5</code> -&gt; Toggle debug window</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + 7</code> -&gt; Toggle class structure</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + 9</code> -&gt; Toggle git window</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + o</code> -&gt; Search for class/files/actions/symbols</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Command + k</code> -&gt; Commit changes</p>
+  </li>
+  <li>
+    <p>Option + f12 -&gt; Open terminal window</p>
+  </li>
+  <li>
+    <p>Option + s -&gt; Sync gradle</p>
+  </li>
+  <li>
+    <p>Option + d -&gt; Attach debugger to Android process</p>
+  </li>
+  <li>
+    <p>Option + 0 -&gt; Open build dialog</p>
+  </li>
+  <li>
+    <p>Option + shift + f11 -&gt; Select devices to run the application</p>
+  </li>
+  <li>
+    <p>Control + g -&gt; Select multiple occurrences of the selected text</p>
+  </li>
+  <li>
+    <p>Control + v -&gt; Open vcs operation window</p>
+  </li>
+  <li>
+    <p>Control + shift + c -&gt; Close tooltips in Android studio</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<p><strong>Untill next time ðŸ‘‹</strong></p>
+
+:ET
