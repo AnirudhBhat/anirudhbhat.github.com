@@ -35,13 +35,15 @@ In no particular order:
 
 14. `Option + 0` - Open build dialog
 
-15. `Option + shift + f11` - Select devices to run the application
+15. `Option + Shift + f11` - Select devices to run the application
 
 16. `Control + g` - Select multiple occurrences of the selected text
 
 17. `Control + v` - Open vcs operation window
 
-18. `Control + shift + c` - Close tooltips in Android studio
+18. `Control + Shift + c` - Close tooltips in Android studio
+
+19. `Control + Option + c` - Compare current open file with the branch
 
 
 <br />
