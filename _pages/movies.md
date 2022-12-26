@@ -6,6 +6,7 @@ permalink: /movies/
 
 # **Movies I have watched**
 
+ - [Doctor G](https://en.wikipedia.org/wiki/Doctor_G)
  - [Kantara](https://en.wikipedia.org/wiki/Kantara_(film))
  - [Vikrant Rona](https://en.wikipedia.org/wiki/Vikrant_Rona)
  - [Gaalipata 2](https://en.wikipedia.org/wiki/Gaalipata_2)
