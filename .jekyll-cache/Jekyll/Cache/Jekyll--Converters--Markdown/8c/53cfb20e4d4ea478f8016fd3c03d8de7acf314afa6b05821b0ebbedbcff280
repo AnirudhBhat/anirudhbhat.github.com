@@ -1,4 +1,4 @@
-I"Ã<p>In no particular order:</p>
+I"E<p>In no particular order:</p>
 
 <ol>
   <li>
@@ -44,7 +44,7 @@
     <p><code class="highlighter-rouge">Option + 0</code> - Open build dialog</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">Option + shift + f11</code> - Select devices to run the application</p>
+    <p><code class="highlighter-rouge">Option + Shift + f11</code> - Select devices to run the application</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">Control + g</code> - Select multiple occurrences of the selected text</p>
@@ -53,7 +53,10 @@
     <p><code class="highlighter-rouge">Control + v</code> - Open vcs operation window</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">Control + shift + c</code> - Close tooltips in Android studio</p>
+    <p><code class="highlighter-rouge">Control + Shift + c</code> - Close tooltips in Android studio</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Control + Option + c</code> - Compare current open file with the branch</p>
   </li>
 </ol>
 
