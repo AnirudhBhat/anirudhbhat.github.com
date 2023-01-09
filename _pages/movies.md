@@ -6,6 +6,9 @@ permalink: /movies/
 
 # **Movies I have watched**
 
+ - [Qala](https://en.wikipedia.org/wiki/Qala_(film))
+ - [Jaya Jaya Jaya hey](https://en.wikipedia.org/wiki/Jaya_Jaya_Jaya_Jaya_Hey_(film))
+ - [Inside Out](https://en.wikipedia.org/wiki/Inside_Out_(2015_film))
  - [Doctor G](https://en.wikipedia.org/wiki/Doctor_G)
  - [Kantara](https://en.wikipedia.org/wiki/Kantara_(film))
  - [Vikrant Rona](https://en.wikipedia.org/wiki/Vikrant_Rona)
