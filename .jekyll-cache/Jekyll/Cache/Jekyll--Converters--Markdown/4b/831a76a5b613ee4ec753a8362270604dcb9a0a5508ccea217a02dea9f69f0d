@@ -1,0 +1,121 @@
+I"�<h1 id="hello-libro-">Hello Libro! 👋</h1>
+
+<p>I'm very happy to express my interest in joining your team as a Android Engineer!</p>
+
+<p>I'm an avid reader and book lover. The opportunity to contribute to Libro.fm deeply resonates with me. I believe in the power of stories to shape communities.</p>
+
+<h2 id="why-me">Why me?</h2>
+
+<p>I will give you 3 reasons for hiring me, i will explain my motivation, and i will list the relevant projects that i have worked on</p>
+
+<p><em>First</em>, I can write clean code that solves complex problems. I always believe that design patterns, SOLID principles and architecture are far more important than the technology or the language we use to solve the problem. I like to keep things as boring and simple as possible. Technology is a means and not an end.</p>
+
+<p><em>Second</em>, I write tests and an extensive believer in writing good unit tests. In my opinion any software which does not have tests are legacy software</p>
+
+<p><em>Third</em>, I am a team player. I always try to give positive feedback during code reviews and does not nitpick on small things which really aren’t important on the higher level. I love to work with people who show empathy and kindness. I have been in a situation where i understand being calm and showing kindness goes a long way.</p>
+
+<h2 id="why-librofm">Why Libro.fm?</h2>
+
+<p>Because its rare to find a product that not just achieves technical excellence but also has a beautiful purpose. As someone who reads daily, I personally care about the mission.</p>
+
+<p>By the way, I noticed that the job description asks for experience in audio streaming, media3 library …etc. While I don’t have professional experience working in those areas, I do have some knowledge using audio streaming, ExoPlayer library for my side projects and I’m eager to learn and work on those.</p>
+
+<h2 id="projects--experience">Projects &amp; Experience</h2>
+
+<p><strong><a href="https://automattic.com/">Automattic</a> (Remote)</strong></p>
+
+<p><strong>Role:</strong> Mobile Wrangler</p>
+
+<p><strong>Contributions:</strong></p>
+<ol>
+  <li>Contributed to the development of the <a href="https://play.google.com/store/apps/details?id=com.woocommerce.android&amp;hl=en_IN">WooCommerce Android app</a>, delivering core features and performance improvements.</li>
+  <li>Built In-Person Payments support from the ground up using the Stripe Terminal SDK, enabling seamless card-present transactions.</li>
+  <li>Led the expansion of In-Person Payments to 3 new markets — the United States, United Kingdom, and Canada — ensuring localisation, compliance, and reliability.Worked on new WooCommerce POS solution from scratch</li>
+  <li>Designed and developed a new Point-of-Sale (POS) solution within the WooCommerce Android app, tailored for retail merchants and optimized for tablet interfaces.</li>
+  <li>All development work was done in a fully open-source environment, with code contributions publicly visible on <a href="https://github.com/woocommerce/woocommerce-android">WooCommerce Android GitHub</a></li>
+</ol>
+
+<p><strong>frameworks/Architecture</strong></p>
+<ol>
+  <li>MVVM architecture</li>
+  <li>Kotlin coroutines for asynchronous stuff</li>
+  <li>Junit for unit tests</li>
+</ol>
+
+<p><strong>Learnings:</strong></p>
+<ol>
+  <li>The biggest learning working in an distributed environment has been the importance of over communicating. Writing clear and detailed PR descriptions, documenting decisions in detail, favoring public channels over DMs.</li>
+  <li>Another one is the value of aligning coding conventions and architectural guidelines team wide. Once aligned, we can make use of linters and static analysers to catch small issues early so that they don’t come up in PR reviews which can be seen as nitpicks.</li>
+</ol>
+
+<hr />
+
+<p><strong><a href="https://www.noonacademy.com/">Noon academy</a></strong></p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.noonEdu.k12App&amp;hl=en_IN">Play store link</a></p>
+
+<p><strong>Role:</strong> Senior android engineer</p>
+
+<p><strong>Contributions:</strong></p>
+<ol>
+  <li>Introduced team to writing Unit tests. Gave internal talks about testing.</li>
+  <li>Wrote custom lint checks to get a consistent design throughout the app</li>
+  <li>Gave internal talk on MVI architecture and its benefits with respect to testing</li>
+  <li>Was part of 3 major feature module from scratch and 1 major rewrite</li>
+</ol>
+
+<p><strong>frameworks/Architecture</strong></p>
+<ol>
+  <li>MVVM for some of the module and MVI for few others</li>
+  <li>Retrofit for networking</li>
+  <li>LiveData for reactive stuff</li>
+  <li>Dagger2 for DI</li>
+  <li>java/kotlin</li>
+</ol>
+
+<p><strong>Learnings:</strong></p>
+<ol>
+  <li>It’s impossible to scale an app without proper design system in place.</li>
+  <li>Rewriting an old feature with zero unit tests and get the requirement’s right is quite hard. Knew this beforehand but experienced it first hand</li>
+</ol>
+
+<p><br /></p>
+
+<hr />
+
+<p><strong>Bytemark</strong>
+<a href="https://play.google.com/store/apps/details?id=co.bytemark.nywaterway&amp;hl=en_US">NYW</a>,
+<a href="https://play.google.com/store/apps/details?id=co.bytemark.mydart&amp;hl=en_US">MyDart</a>,
+<a href="https://play.google.com/store/apps/details?id=co.bytemark.southshore&amp;hl=en_US">SouthShore</a>,
+<a href="https://play.google.com/store/apps/details?id=co.bytemark.ripta&amp;hl=en_US">Ripta</a></p>
+
+<p><strong>Role:</strong> Android engineer</p>
+
+<p><strong>Contributions:</strong></p>
+<ol>
+  <li>Introduced team to writing Unit tests</li>
+  <li>Initiated using Kotlin for new features and tests</li>
+  <li>Worked with a German company to integrate their sdk into our app</li>
+</ol>
+
+<p><strong>frameworks/Architecture</strong></p>
+<ol>
+  <li>MVVM for some of the module and MVI for few others</li>
+  <li>Retrofit for networking</li>
+  <li>RxJava for reactive stuff</li>
+  <li>Dagger2 for DI</li>
+  <li>java/kotlin</li>
+</ol>
+
+<p><strong>Interesting challenge that I faced:</strong> our iOS apps were getting rejected by apple for some weird reason. My then colleague (Now my wife :)) and I sat together to figure out why apple was rejecting our apps and later found out it was because of slow startup time. Apple has this set startup time within which all apps should start and be ready to use. Our apps were failing to start within that time on some of the iPhones and that too it wasn’t quite reproducible always. We checked the code written in our splash screen and everything looked fine, calls were being made on background thread. After some time we figured out that we were using a SDK which was being initialised on app startup and it internally was setting up maps and few other stuff which was resulting in slow startup times.</p>
+
+<p>Although this was not that complex to figure out it was fun doing this.</p>
+
+<p><strong>Learnings:</strong> it was here that I realised why fakes were better than mocks when unit testing. Eye opener</p>
+
+<p>You can find my open source side projects from my <a href="https://github.com/AnirudhBhat/">Github</a></p>
+
+<p><br />
+Let’s talk!</p>
+
+:ET
