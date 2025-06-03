@@ -29,6 +29,8 @@ I see a pattern now. We always chase what's next but look back with longing at w
 
 It's the smallest things that shine brightest. 
 
+When you look back, you don't remember the stress. You remember the smell of the rain, a baby's laugh, family's support, casual evening conversation with your spouse. That's the truth about good old golden days. They're made of small, ordinary things that you're living right now.
+
 Enjoy the gentle summer sun rays kissing your skin instead of whining about the heat. Because when the winter comes, you'll find yourself longing for that warmth. The golden days aren't gone. They're happening now.
 
 Don't let today slip away unnoticed. These are our good old golden days.
