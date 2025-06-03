@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Good old golden days"
-date:   2025-06-04 16:40:00 +0530
+date:   2025-06-03 16:40:00 +0530
 categories: blog
 ---
 
